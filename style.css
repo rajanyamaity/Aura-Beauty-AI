@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    height: 85vh;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.chat-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #ddd;
+}
+
+.chat-header, .audit-header {
+    background-color: #ffb6c1;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.chat-header h2 { font-size: 1.5rem; margin-bottom: 5px; }
+.chat-header p { font-size: 0.9rem; color: #555; }
+
+.chat-window {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    max-width: 75%;
+    margin-bottom: 15px;
+    padding: 12px 16px;
+    border-radius: 20px;
+    line-height: 1.4;
+}
+
+.ai-message {
+    background-color: #ffe4e1;
+    color: #333;
+    align-self: flex-start;
+    border-bottom-left-radius: 2px;
+}
+
+.chat-input-area {
+    display: flex;
+    padding: 15px;
+    background: white;
+    border-top: 1px solid #ddd;
+}
+
+.chat-input-area input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.chat-input-area button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.audit-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #1e1e1e;
+    color: #00ff00;
+}
+
+.audit-header {
+    background-color: #333;
+    color: white;
+}
+
+.audit-window {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.85rem;
+}
+
+.log-entry { margin-bottom: 10px; }
+
+/* Product Card UI */
+.product-card {
+    background: white;
+    border: 1px solid #ffb6c1;
+    border-radius: 12px;
+    padding: 12px;
+    margin-bottom: 15px;
+    max-width: 260px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    align-self: flex-start;
+}
+
+.product-image {
+    width: 100%;
+    border-radius: 8px;
+    height: 160px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.product-info h4 {
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.product-info p {
+    color: #ff69b4;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+}
+
+.card-actions {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.btn-buy, .btn-skip {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn-buy { background: #3395ff; color: white; flex: 1; }
+.btn-buy:hover { background: #2275d1; }
+.btn-skip { background: #f0f0f0; color: #555; flex: 1; }
+.btn-skip:hover { background: #e0e0e0; }
+
+.refinement-panel {
+    background: #fff0f5;
+    border: 1px solid #ffb6c1;
+    border-radius: 12px;
+    padding: 12px;
+    margin-bottom: 15px;
+    max-width: 260px;
+    align-self: flex-start;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.refinement-panel p {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.refinement-panel select {
+    width: 100%;
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 8px;
+    font-size: 0.85rem;
+}
+
+.btn-refine {
+    background: #ff69b4;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-refine:hover {
+    background: #ff1493;
+}

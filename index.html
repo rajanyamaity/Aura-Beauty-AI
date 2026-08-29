@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura: AI Beauty Consultant</title>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+       
+        <main class="chat-section">
+            <header class="chat-header">
+                <h2>Aura Beauty AI</h2>
+                <p>Your personal beauty consultant</p>
+            </header>
+            
+            <div class="chat-window" id="chat-window">
+                <div class="message ai-message">
+                    Hi! I'm Aura. What kind of makeup or skincare are you looking for today?
+                </div>
+            </div>
+
+            <div class="chat-input-area">
+                <input type="text" id="user-input" placeholder="Type your request here...">
+                <button id="send-btn">Send</button>
+            </div>
+        </main>
+
+       
+        <aside class="audit-section">
+            <header class="audit-header">
+                <h3>🛠️ Developer Audit Log</h3>
+                <p>Tracking AI Actions</p>
+            </header>
+            <div class="audit-window" id="audit-window">
+                <div class="log-entry system-log">
+                    [System]: Agent initialized. Waiting for user input.
+                </div>
+            </div>
+        </aside>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
